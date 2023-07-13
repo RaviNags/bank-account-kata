@@ -30,6 +30,10 @@ public class AccountService {
         return instance;
     }
 
+    /***
+     * Create an account and return his id.
+     * @return account id
+     */
     public String createAccount() {
         String id = UUID.randomUUID().toString();
         accounts.put(id, new Account());

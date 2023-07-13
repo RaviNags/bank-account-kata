@@ -21,7 +21,8 @@ public class Application {
 
     private static void printHistory(List<Transaction> transactions) {
         transactions.forEach(transaction ->
-                System.out.println(transaction.date() + ": "
+                System.out.println(
+                        transaction.date() + ": "
                         + (Operation.WITHDRAWAL.equals(transaction.operation()) ? "-" : "")
                         + transaction.amount()
                         + ", balance : " + transaction.balance()));
